@@ -36,3 +36,31 @@ button {
     color: orange;
     font-weight: bold;
 }
+
+.info-section {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-section p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.info-section ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+

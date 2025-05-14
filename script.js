@@ -20,7 +20,7 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
         // Redirigir al reto 2 después de un breve mensaje de éxito
         setTimeout(function() {
             window.location.href = "/html/ingCiber.html";  // Redirige a otra página
-        }, 2000); // Redirige después de 2 segundos
+        }, 1000); // Redirige después de 1 segundos
     } else {
         // Mostrar mensaje de error si alguna respuesta es incorrecta
         document.getElementById("error-message").textContent = "Una o más respuestas son incorrectas. Intenta de nuevo.";
