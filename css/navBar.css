@@ -1,0 +1,39 @@
+/* Navbar contenedor */
+.navbar {
+    position: relative;
+    color: white;
+    padding: 10px 20px;
+}
+
+#estadistica {
+    background-color: #00D900;
+}
+
+#ciberseguridad {
+    background-color: #2ab92a;
+}
+
+/* Logo a la izquierda absoluta */
+.navbar-logo {
+    left: 20px;
+}
+
+.navbar-logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Título absolutamente centrado */
+.navbar-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.navbar-title h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}

@@ -1,0 +1,38 @@
+.text-check-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.big-bold-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#textInput {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.mensaje-tip {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.mensaje-tip.error {
+    color: red;
+}
+
+.mensaje-tip.empty {
+    color: orange;
+    font-weight: bold;
+}
