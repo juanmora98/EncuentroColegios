@@ -115,6 +115,22 @@ function conectarRed() {
             return;
         }
 
+        // Validar conexión de los servidores con la nube
+        const servidorAConectado = servidorA === nube[0];
+        const servidorBConectado = servidorB === nube[1];
+
+        if (!servidorAConectado || servidorA === "") {
+            document.getElementById("resultado3").textContent = "Error: La IP del Servidor A no concuerda con la IP de la nube.";
+            document.getElementById("resultado3").style.color = "red";
+            return;
+        }
+
+        if (!servidorBConectado || servidorB === "") {
+            document.getElementById("resultado3").textContent = "Error: La IP del Servidor B no concuerda con la IP de la nube.";
+            document.getElementById("resultado3").style.color = "red";
+            return;
+        }
+
         // Validar que las IPs de los computadores formen parte de la IP del servidor
         const servidorAPrefijo = servidorA.split('.').slice(0, 3).join('.');
         const servidorBPrefijo = servidorB.split('.').slice(0, 3).join('.');
@@ -131,21 +147,7 @@ function conectarRed() {
             return;
         }
 
-        // Validar conexión de los servidores con la nube
-        const servidorAConectado = servidorA === nube[0];
-        const servidorBConectado = servidorB === nube[1];
-
-        if (!servidorAConectado && servidorA !== "") {
-            document.getElementById("resultado3").textContent = "Error: La IP del Servidor A no concuerda con la IP de la nube.";
-            document.getElementById("resultado3").style.color = "red";
-            return;
-        }
-
-        if (!servidorBConectado && servidorB !== "") {
-            document.getElementById("resultado3").textContent = "Error: La IP del Servidor B no concuerda con la IP de la nube.";
-            document.getElementById("resultado3").style.color = "red";
-            return;
-        }
+        
 
         const red = document.getElementById("redVisual");
         red.innerHTML = "";
