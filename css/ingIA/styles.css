@@ -1,0 +1,42 @@
+/* ... estilos anteriores ... */
+
+.image-link-section {
+    margin: 20px 0 40px 0;
+}
+
+.activity-image {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.activity-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.tutorial-section {
+    margin: 40px 0 30px 0;
+    text-align: center;
+}
+
+.tutorial-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tutorial-image {
+    width: 150px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.tutorial-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}

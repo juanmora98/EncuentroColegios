@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../css/ingIA/styles.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/core.css">
+    <script src="../js/ingIA/script.js"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar" id="ciberseguridad">
+        <nav class="navbar" id="IA">
             <div class="navbar-logo">
                 <a href="https://www.escuelaing.edu.co/es/" target="_blank">
                     <img src="../resources/img/logo.png" alt="Logo">
@@ -22,5 +23,29 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="container">
+            <h1 class="phase-title">Fase de Validación Visual</h1>
+            <p class="description">Haz clic en la imagen para acceder a la actividad relacionada con esta fase.</p>
+
+            <div class="image-link-section">
+                <a href="https://teachablemachine.withgoogle.com/train/image" target="_blank">
+                    <img src="../resources/img/IAIcon.png" alt="Actividad" class="activity-image">
+                </a>
+            </div>
+            <div class="tutorial-section">
+                <h2 class="tutorial-title">¿Necesitas ayuda? Consulta el tutorial:</h2>
+                <a href="https://medium.com/@warronbebster/teachable-machine-tutorial-bananameter-4bfffa765866" target="_blank">
+                    <img src="../resources/img/tutorial.png" alt="Tutorial" class="tutorial-image">
+                </a>
+            </div>
+            <div class="text-check-section">
+                <h2 class="big-bold-text">Valida con la palabra clave</h2>
+                <input type="text" id="textInput" placeholder="Ingresa la clave">
+                <button onclick="verificarTexto()">Verificar</button>
+                <div id="mensaje" class="mensaje-tip"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

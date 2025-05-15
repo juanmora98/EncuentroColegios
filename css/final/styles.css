@@ -1,0 +1,26 @@
+/* Estilo para el cuadro de felicitaciones */
+.felicidades-cuadro {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.felicidades-imagen {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.felicidades-cuadro h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.felicidades-cuadro p {
+    color: #333;
+}

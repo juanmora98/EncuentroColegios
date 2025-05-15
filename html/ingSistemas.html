@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/ingSistemas/styles.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/core.css">
+    <script src="../js/ingSistemas/script.js"></script>
+    <script src="../js/ingSistemas/game_script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="sistemas">
+            <div class="navbar-logo">
+                <a href="https://www.escuelaing.edu.co/es/" target="_blank">
+                    <img src="../resources/img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="navbar-title">
+                <h1>INGENIERIA DE SISTEMAS</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+          <h1 class="phase-title">¡Resuelve las tres actividades modificando el código!</h1>
+    
+          <!-- ACT 1: Batalla Marciana -->
+      <section class="activity">
+        <h2>Actividad 1: Batalla contra el Marciano</h2>
+        <div class="code-visual-container">
+          <textarea id="code1" rows="6" spellcheck="false">
+# Ajusta el daño del jugador para vencer al marciano
+player_damage = 10
+marciano_hp = 50
+          </textarea>
+          <div class="visual" id="visual1">
+            <div class="icon-display" style="font-size: 48px; display: flex; align-items: center; justify-content: center;">
+              🚀 <span style="margin: 0 10px; font-weight: bold;">VS</span> 👾
+            </div>
+            <div id="resultado1" class="result-box"></div>
+          </div>
+        </div>
+        <button onclick="simularBatalla()">Ejecutar Código</button>
+      </section>
+    
+        <!-- ACT 2: Culebrita con Matrices -->
+        <section class="activity">
+        <h2>Actividad 2: Juego de la Culebrita</h2>
+        <div class="code-visual-container">
+            <textarea id="code2" rows="8" spellcheck="false">
+# Control de movimiento
+snake_pos = [1, 1]
+move = [0, 1]  # [fila, columna]
+
+            </textarea>
+            <div id="matrizJuego" class="matrix-display"></div>
+        </div>
+        <div id="tableroInicial" class="matrix-display"></div>
+        <button onclick="moverCulebra()">Mover Culebra</button>
+        <button onclick="reiniciarCulebra()">Reiniciar</button>
+        <div id="resultado2" class="result-box"></div>
+        </section>
+    
+          <!-- ACT 3: Conexión de Red Computacional con IPs -->
+          <section class="activity">
+            <h2>Actividad 3: Red de Computadoras y Servidores</h2>
+            <div class="code-visual-container">
+              <textarea id="code3" rows="10" spellcheck="false">
+                # Asigna IPs para conectar computadoras a sus servidores
+                # y conecta servidores a la nube
+                grupoA = ["192.168.0.1", "192.168.0.2", "", "", ""]
+                grupoB = ["", "192.168.1.2", "192.168.1.3", "", ""]
+                servidorA = "192.168.0.100"
+                servidorB = "192.168.1.10"
+              </textarea>
+              <div id="redVisual" class="network-display"></div>
+            </div>
+            <button onclick="conectarRed()">Ejecutar Código</button>
+            <button onclick="reiniciarRed()">Reiniciar</button>
+            <div id="resultado3" class="result-box"></div>
+          </section>
+          
+    
+          <!-- Final -->
+          <div id="mensajeFinal" class="mensaje-final"></div>
+        </div>
+      </main>
+</body>
+</html>

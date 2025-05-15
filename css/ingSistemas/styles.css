@@ -1,0 +1,82 @@
+.activity {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .activity textarea {
+    width: 90%;
+    max-width: 600px;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .activity button {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+  }
+  
+  .result-box {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .matrix-display {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 5px;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .matrix-display div {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    font-size: 1.2rem;
+  }
+  
+  .network-display {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .network-node {
+    padding: 10px;
+    background-color: #eaeaea;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .connected {
+    background-color: #a8f0c6;
+  }
+  .server {
+    background-color: #f0e68c;
+  }
+  .cloud {
+    background-color: #add8e6;
+  }
+  
+  
+  
+  .mensaje-final {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: blue;
+  }
+  

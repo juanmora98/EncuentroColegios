@@ -10,8 +10,21 @@
 }
 
 #ciberseguridad {
-    background-color: #2ab92a;
+    background-color: #bccf1b;
 }
+
+#IA {
+    background-color: #6459c4;
+}
+
+#sistemas {
+    background-color: #008542;
+}
+
+#escuela {
+    background-color: #990000;
+}
+
 
 /* Logo a la izquierda absoluta */
 .navbar-logo {
